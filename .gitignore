@@ -1,0 +1,18 @@
+/target/
+*/target/**
+**/META-INF/
+
+# eclipse plugin
+.sonarlint/*
+
+# eclipse folder
+.metadata/*
+RemoteSystemsTempFiles/*
+
+# project setting
+*/.classpath
+*/.settings/
+*/.project
+
+# mac
+.DS_Store
