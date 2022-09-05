@@ -5,6 +5,8 @@ import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import org.junit.Assert;
+
 public class RestClientDemo {
 
 	public static void main(String[] args) {
@@ -22,5 +24,8 @@ public class RestClientDemo {
 		System.out.println("response = " + response);
 		System.out.println("response.getStatus() = " + response.getStatus());
 		System.out.println("body = " + body);
+		
+		// junit check
+		Assert.assertEquals(200, response.getStatus());
     }
 }
