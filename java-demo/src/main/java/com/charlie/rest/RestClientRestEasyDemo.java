@@ -7,11 +7,13 @@ import javax.ws.rs.core.Response;
 
 import org.junit.Assert;
 
-public class RestClientDemo {
+public class RestClientRestEasyDemo {
 
 	public static void main(String[] args) {
+		// init client
 		Client client = ClientBuilder.newClient();
-		// demo api
+		// Demo API
+		// Using google app script simple api for demo
 		String link = "https://script.google.com/macros/s/AKfycbyPthJ8iO6B1fPR1YBVvltBQz4dvAnrtE48sw0VxqMIW-XwejTsS4db3Pgw3oUWA4U/exec";
 		Response response = client
 				.target(link)
