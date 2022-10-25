@@ -16,3 +16,8 @@ RemoteSystemsTempFiles/*
 
 # mac
 .DS_Store
+/.metadata/
+
+#other
+creeper/*
+image-filter/*
